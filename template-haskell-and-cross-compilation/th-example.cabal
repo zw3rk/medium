@@ -1,0 +1,15 @@
+name:                th-example
+version:             0.1.0.0
+license:             BSD3
+license-file:        LICENSE
+author:              Moritz Angermann
+maintainer:          moritz.angermann@gmail.com
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+executable th-example
+  main-is:             Main.hs
+  other-extensions:    TemplateHaskell, LambdaCase
+  build-depends:       base >=4.10 && <4.11, file-embed >=0.0 && <0.1, gitrev >= 1.3 && <1.4
+  default-language:    Haskell2010
